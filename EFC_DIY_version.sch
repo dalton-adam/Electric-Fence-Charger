@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Fence_Charger-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -24,17 +23,6 @@ F 2 "Diode_THT:D_DO-15_P12.70mm_Horizontal" H 1600 1850 50  0001 C CNN
 F 3 "~" H 1600 1850 50  0001 C CNN
 	1    1600 1850
 	-1   0    0    1   
-$EndComp
-$Comp
-L pspice:DIODE 1N4006
-U 1 1 5E966BEF
-P 2250 1850
-F 0 "1N4006" H 2250 2115 50  0000 C CNN
-F 1 "DIODE" H 2250 2024 50  0000 C CNN
-F 2 "Diode_SMD:D_2010_5025Metric_Pad1.52x2.65mm_HandSolder" H 2250 1850 50  0001 C CNN
-F 3 "~" H 2250 1850 50  0001 C CNN
-	1    2250 1850
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:CP1 C1
@@ -70,23 +58,12 @@ F 3 "~" H 2950 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pspice:DIODE 1N4006_2
-U 1 1 5E967028
-P 3450 5900
-F 0 "1N4006_2" V 3496 5772 50  0000 R CNN
-F 1 "DIODE" V 3405 5772 50  0000 R CNN
-F 2 "Diode_THT:D_DO-15_P12.70mm_Horizontal" H 3450 5900 50  0001 C CNN
-F 3 "~" H 3450 5900 50  0001 C CNN
-	1    3450 5900
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Transistor_BJT:MJE13005G Q1
 U 1 1 5E96720C
 P 2300 5350
 F 0 "Q1" H 2492 5396 50  0000 L CNN
 F 1 "MJE13005G" H 2492 5305 50  0000 L CNN
-F 2 "digikey-footprints:TO-220-3" H 2550 5275 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2550 5275 50  0001 L CIN
 F 3 "http://www.onsemi.com/pub_link/Collateral/MJE13005-D.PDF" H 2300 5350 50  0001 L CNN
 	1    2300 5350
 	-1   0    0    -1  
@@ -120,12 +97,12 @@ $EndComp
 $Comp
 L power:Earth #PWR06
 U 1 1 5E967A74
-P 3450 6100
-F 0 "#PWR06" H 3450 5850 50  0001 C CNN
-F 1 "Earth" H 3450 5950 50  0001 C CNN
-F 2 "" H 3450 6100 50  0001 C CNN
-F 3 "~" H 3450 6100 50  0001 C CNN
-	1    3450 6100
+P 3450 6000
+F 0 "#PWR06" H 3450 5750 50  0001 C CNN
+F 1 "Earth" H 3450 5850 50  0001 C CNN
+F 2 "" H 3450 6000 50  0001 C CNN
+F 3 "~" H 3450 6000 50  0001 C CNN
+	1    3450 6000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -171,7 +148,7 @@ U 1 1 5E96A8E6
 P 2600 3600
 F 0 "Q2" H 2791 3554 50  0000 L CNN
 F 1 "2N3906" H 2791 3645 50  0000 L CNN
-F 2 "digikey-footprints:TO-92-3" H 2800 3525 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92L_Inline_Wide" H 2800 3525 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 2600 3600 50  0001 L CNN
 	1    2600 3600
 	-1   0    0    1   
@@ -204,7 +181,7 @@ U 1 1 5E96D71C
 P 3950 4150
 F 0 "Q3" H 4141 4196 50  0000 L CNN
 F 1 "2N3904" H 4141 4105 50  0000 L CNN
-F 2 "digikey-footprints:TO-92-3" H 4150 4075 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92L_Inline_Wide" H 4150 4075 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 3950 4150 50  0001 L CNN
 	1    3950 4150
 	-1   0    0    -1  
@@ -226,7 +203,7 @@ U 1 1 5E96FA42
 P 6250 4350
 F 0 "U1" H 6250 4928 50  0000 C CNN
 F 1 "NE556" H 6250 4837 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6250 4350 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 6250 4350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ne556.pdf" H 6250 4350 50  0001 C CNN
 	1    6250 4350
 	-1   0    0    -1  
@@ -402,7 +379,7 @@ U 2 1 5E96FAEF
 P 8000 4350
 F 0 "U1" H 8000 4928 50  0000 C CNN
 F 1 "NE556" H 8000 4837 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 8000 4350 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 8000 4350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ne556.pdf" H 8000 4350 50  0001 C CNN
 	2    8000 4350
 	1    0    0    -1  
@@ -706,7 +683,7 @@ Wire Wire Line
 	1050 1750 1850 1750
 Wire Wire Line
 	1850 1750 1850 1850
-Text Label 2450 1850 0    50   ~ 0
+Text Label 2350 1850 0    50   ~ 0
 Vcc
 Text Label 6750 4550 0    50   ~ 0
 Vcc
@@ -793,4 +770,26 @@ F 3 "~" H 2850 3850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2500 3800 2500 4700
+$Comp
+L Device:D D1
+U 1 1 5EA2490C
+P 2200 1850
+F 0 "D1" H 2200 1634 50  0000 C CNN
+F 1 "1N4006" H 2200 1725 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2200 1850 50  0001 C CNN
+F 3 "~" H 2200 1850 50  0001 C CNN
+	1    2200 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 5EA24D25
+P 3450 5850
+F 0 "D2" V 3404 5929 50  0000 L CNN
+F 1 "1N4006_2" V 3495 5929 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3450 5850 50  0001 C CNN
+F 3 "~" H 3450 5850 50  0001 C CNN
+	1    3450 5850
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
